@@ -1,0 +1,142 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ff7979;
+    background-image: url("../intro-component-with-signup-form-master/images/bg-intro-desktop.png");
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 85%;
+    max-width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.left {
+    width: 50%;
+    color: white;
+}
+
+.left h1 {
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.left p {
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 440px;
+}
+
+.right {
+    width: 50%;
+    max-width: 450px;
+}
+
+.offer {
+    background: #5d54a3;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    border-radius: 7px;
+    font-size: 13px;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 2px rgba(0,0,0,0.15);
+}
+
+.form {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    box-shadow: 0 7px 3px rgba(0,0,0,0.15);
+}
+
+.form input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    outline: none;
+    font-size: 13px;
+}
+
+.form input:focus {
+    border-color: #5d54a3;
+}
+
+.form button {
+    background: #38cc8c;
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 3px 0 #2eaf78;
+}
+
+.form button:hover {
+    background: #32b982;
+}
+
+.form small {
+    color: #aaa;
+    text-align: center;
+    font-size: 10px;
+}
+
+.form a {
+    color: #ff7979;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+
+    .container {
+        flex-direction: column;
+        width: 90%;
+        gap: 35px;
+        padding: 50px 0;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+
+    .left {
+        text-align: center;
+    }
+
+    .left h1 {
+        font-size: 30px;
+    }
+
+    .left p {
+        margin: auto;
+    }
+
+    .right {
+        max-width: 450px;
+    }
+}
